@@ -73,9 +73,31 @@
     }
 
     .logo {
-      width: 88px;
       height: 31px;
+      width: auto;
       margin: 5px;
+      object-fit: contain;
+    }
+
+    .gif-container {
+      max-width: 200px;
+      margin: 20px auto;
+    }
+
+    .gif-wrapper {
+      width: 100%;
+      height: 0;
+      padding-bottom: 122%;
+      position: relative;
+    }
+
+    .giphy-credit {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .giphy-credit a {
+      color: #ffff00;
     }
   </style>
 </head>
@@ -101,7 +123,14 @@
       <a href="#">📧 Email Me!</a>
     </div>
     
-    <img src="/api/placeholder/100/100" alt="Dancing Baby GIF" />
+    <div class="gif-container">
+      <div class="gif-wrapper">
+        <iframe src="https://giphy.com/embed/Xw6yFn7frR3Y4" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      </div>
+      <div class="giphy-credit">
+        <a href="https://giphy.com/gifs/baby-funny-cute-Xw6yFn7frR3Y4">via GIPHY</a>
+      </div>
+    </div>
     
     <div class="construction">
       🚧 UNDER CONSTRUCTION 🚧
